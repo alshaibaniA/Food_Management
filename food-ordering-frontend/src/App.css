@@ -1,0 +1,157 @@
+:lang(ar) {
+  font-family: 'Amiri', serif;
+}
+/* General styling */
+.App {
+  text-align: center;
+  background-color: #D3D3D3;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the logo */
+.App-logo {
+  height: 80px; /* Moderate size */
+  opacity: 0.2; /* Slight transparency */
+  transition: opacity 0.6s ease; /* Smooth transition */
+  position: absolute;
+    left: 20px; /* Adjust positioning for a balanced look */
+    top: 20px; /* Adjust top margin */
+
+}
+
+
+/* Header styling */
+.App-header {
+  background-color: #FFFFFF; /* Dark header for contrast */
+  color: White;
+  min-height: 15vh; /* Make header taller for better visual balance */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+
+}
+
+@import url('http://fonts.googleapis.com/css2?family=Amiri&display=swap');
+.App-header h1 {
+  font-family: 'Amiri', 'Traditional Arabic', serif; /* Use Amiri font for Arabic text */
+
+  color: Black; /* Ensure h1 text color is white */
+  font-size: 4rem; /* Adjust size if needed */
+  margin: 0;
+  padding-left: 20px;  /* Add padding to the left */
+  padding-right: 20px; /* Add padding to the right */
+  letter-spacing: 4px;  /* Increase letter spacing for wider appearance */
+}
+/* Logo hover animation */
+.App-logo:hover {
+  opacity: 1; /* Full opacity when hovered */
+  transform: scale(1.1); /* Slight scale-up on hover */
+}
+
+
+/* Navigation bar styling */
+nav {
+  margin-top: 20px; /* Add space between header and nav */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px; /* More space between nav items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #61dafb; /* Light blue color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px; /* Adding padding for clickable area */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+  color: white;
+  background-color: #007bff; /* Hover background color */
+  text-decoration: none;
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Active state for links */
+nav ul li a.active {
+  background-color: #0056b3; /* Active color */
+  color: #fff;
+}
+
+/* Mobile responsiveness for nav links */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    margin-top: 20px; /* Spacing between nav and header */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Vertical margin for better spacing on mobile */
+  }
+
+  .App-logo {
+    max-width: 120px; /* Scale logo smaller on mobile */
+  }
+
+  .App-header {
+    font-size: 2rem; /* Make header text smaller on mobile */
+  }
+
+  nav ul li a {
+    font-size: 1.5rem; /* Larger text on mobile for readability */
+    padding: 10px 15px; /* Adjust padding for mobile */
+  }
+}
+
+/* Animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.nav-button {
+  width: auto; /* Default is auto, just in case something is forcing it */
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #B22222; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #8B0000; /* Darker green on hover */
+}
+

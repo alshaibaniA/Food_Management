@@ -1,0 +1,152 @@
+.style-order-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-block {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.order-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.order-header p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.order-details {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.item-name {
+    font-size: 1.5rem;
+    color: #333;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #28a745;
+    min-width: 70px; /* Ensure the price has consistent width */
+    text-align: right;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.action-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.action-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .order-header h3 {
+        font-size: 1rem;
+    }
+
+    .order-item {
+        font-size: 18px;
+    }
+
+    .action-btn {
+        font-size: 14px;
+    }
+    .item-badge {
+        background-color: #282745;
+        color: white;
+        border-radius: 30px;
+        padding: 6px 16px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 200px;
+
+    }
+    .order-item:last-child {
+        border-bottom: none;
+    }
+}
+.order-comment {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.order-comment strong {
+    font-weight: bold;
+}
+.order-type {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.order-type span {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.order-type span {
+    background-color: #f0f0f0; /* Default background color */
+    border-radius: 5px;
+}
+
+.order-type span.dine-in {
+    background-color: #c8e6c9; /* Green for dine in */
+}
+
+.order-type span.takeaway {
+    background-color: #ffccbc; /* Orange for takeaway */
+}

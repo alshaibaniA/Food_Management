@@ -1,0 +1,296 @@
+/* Apply Amiri font to Arabic text */
+:lang(ar) {
+  font-family: 'Amiri', serif;
+}
+
+/* Base styles */
+.order-page-container {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-section {
+  margin-bottom: 20px;
+}
+
+/* Category button styling to make it feel clickable */
+.category-title {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333; /* Dark background for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  min-width: 150px;  /* Minimum width to keep buttons consistent */
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.category-title:hover {
+  background-color: #555; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.category-title.active {
+  background-color: #888; /* Active state color */
+  transform: scale(1.05);
+}
+
+/* Optional: If you want to ensure the buttons are vertically aligned */
+button, .category-title {
+  display: inline-block;
+  width: 100%; /* Ensure full width for containers where needed (e.g., Place Order) */
+}
+
+/* Styling for item list */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.item-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.item-price {
+  font-weight: bold;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  background-color: #ccc;
+  color: white;
+  margin: 0 10px; /* Add margin between the buttons */
+  border: none;
+  padding: 10px 15px; /* Increase the button padding */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px; /* Increase font size for buttons */
+    transition: background-color 0.3s ease;
+
+}
+.quantity-controls button:focus {
+  outline: none; /* Remove focus outline */
+}
+.quantity-controls button:hover {
+  background-color: #888;
+}
+
+.quantity-display {
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.phone-input, .comment-input, .place-order {
+  margin-bottom: 20px;
+}
+
+.phone-input input,
+.comment-input textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.place-order button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Ensuring full-width for Place Order button */
+  min-width: 150px;  /* Minimum width to keep buttons consistent */
+}
+
+.place-order button:disabled {
+  background-color: #ccc;
+}
+
+.order-summary-box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.separator-line {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.total-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.comment-input {
+  margin-top: 10px;
+}
+
+.comment-input textarea {
+  resize: none;
+  font-size: 1rem;
+}
+
+.place-order {
+  text-align: center;
+}
+.order-confirmation {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirmation-header h1 {
+  font-size: 32px;
+  color: #5A9C75;
+  margin-bottom: 10px;
+}
+
+.thank-you-message {
+  font-size: 18px;
+  color: #555;
+}
+
+.order-id {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.order-items-container {
+  margin-top: 20px;
+}
+
+.order-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.item-quantity {
+  font-size: 16px;
+  color: #777;
+  display: inline-block;       /* Make it behave like a block element */
+  text-align: center;          /* Center the text inside the span */
+  width: 100%;
+}
+
+.item-price {
+  font-size: 16px;
+  color: #FF6F61; /* Use a color that stands out */
+    font-weight: bold;
+
+}
+
+.total-container {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.total-container {
+  margin-top: 20px;
+  text-align: center; /* Center the content */
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.total-container span {
+  color: #FF6F61; /* Highlight the total price in a vibrant color */
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+.contact-info strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .item-quantity {
+    display: block;            /* Make the span block-level element on mobile */
+    text-align: center;        /* Ensure the text is centered */
+    margin: 0 auto;            /* Center the span horizontally */
+    width: fit-content;        /* Make the span width fit the content */
+  }
+}

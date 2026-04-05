@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS public.items
     image character varying(255) COLLATE pg_catalog."default",
     price double precision NOT NULL,
     is_delete boolean NOT NULL,
+    is_removed boolean NOT NULL,
     CONSTRAINT items_pkey PRIMARY KEY (item_id)
 );
 

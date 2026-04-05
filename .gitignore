@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+# Ensure food-ordering-frontend folder is tracked
+!Food_Management/food-ordering-frontend/

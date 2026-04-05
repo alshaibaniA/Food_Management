@@ -22,6 +22,10 @@ public class Item {
     @JsonProperty("isDelete")
     private boolean isDelete = false;
     private String image;
+    @Setter
+    @Column(name = "is_removed", nullable = false)
+    @JsonProperty("isRemoved")
+    private boolean isRemoved = false;  // New field for permanent delete
 
     public boolean isDelete() {
         return isDelete;
@@ -30,5 +34,13 @@ public class Item {
     public void setDelete(boolean delete) {
         this.isDelete = delete;
 
+    }
+
+    public boolean isRemoved() {
+        return isRemoved;
+    }
+
+    public void setRemoved(boolean removed) {
+        this.isRemoved = removed;
     }
 }

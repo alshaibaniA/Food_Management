@@ -66,6 +66,17 @@ public class ItemController {
         } else {
             throw new IllegalArgumentException("Missing 'isDelete' in request body");
         }
+
+
+    }
+    @PutMapping("/remove/{itemId}")
+    public Item removeItem(@PathVariable Long itemId, @RequestBody Map<String, Boolean> status) {
+        if (status.containsKey("isRemoved")) {
+            Boolean isRemoved = status.get("isRemoved");  // Extract isRemoved value from the map
+            return itemService.removeItem(itemId, isRemoved);  // Call service method to handle removal
+        } else {
+            throw new IllegalArgumentException("Missing 'isRemoved' in request body");
+        }
     }
 
 

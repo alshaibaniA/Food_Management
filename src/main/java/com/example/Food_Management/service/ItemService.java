@@ -35,6 +35,14 @@ public class ItemService {
         return null;  // Return null if the item is not found
     }
 
+    public Item removeItem(Long itemId, Boolean isRemoved) {
+        Item item = itemRepository.findById(itemId).orElse(null);
+        if (item != null) {
+            item.setRemoved(isRemoved);  // Set isRemoved to true to mark as permanently deleted
+            return itemRepository.save(item);
+        }
+        return null;  // Return null if the item is not found
+    }
 
 
 }

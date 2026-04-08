@@ -54,7 +54,7 @@ function App() {
       {/* Header */}
       <header className="App-header">
         <img src="/image/myLogo.jpg" alt="Logo" className="App-logo" />
-        <h1 lang="ar">المُدخنة</h1>
+        <h1 lang="ar">ألوان الطعام</h1>
       </header>
 
       {/* Navigation Buttons */}
@@ -104,11 +104,8 @@ function App() {
       <Routes>
         <Route path="/login" element={<LoginForm setUser={setUser} />} />
 
-        {/* Protect /signup route using PrivateRoute */}
-        <Route
-          path="/signup"
-          element={<PrivateRoute element={<SignUpForm setUser={setUser} />} userRole={user?.role} />}
-        />
+        {/* Public signup route */}
+        <Route path="/signup" element={<SignUpForm setUser={setUser} />} />
 
         <Route
           path="/items"
